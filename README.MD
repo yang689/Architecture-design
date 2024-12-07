@@ -22,3 +22,13 @@
 
 
 ![Architecture](./architecture/Architecture.png)
+
+
+
+# Deployment Flow
+
+1. GitHub Actions Workflow
+- GitHub Actions runner build Docker image and upload to Amazon ECR
+- Update ECS service with new task definition
+2. CloudFormation
+- creation of ECS clusters, task definitions...
